@@ -32,14 +32,52 @@ function init() {
         },
 
         {
+        type: "input",
+        message: "Table of Contents",
+        name: "contents",
+        },
+
+        {
+        type: "input",
+        message: "Installation instructions?",
+        name: "installation",
+        },
+
+        {
+        type: "input",
+        message: "Usage info?",
+        name: "usage",
+        },
+
+        {
+        type: "input",
+        message: "Contributors?",
+        name: "credits",
+        },
+
+        {
+        type: "input",
+        message: "How to test?",
+        name: "test",
+        },
+
+        {
+        type: "input",
+        message: "Questions",
+        name: "questions",
+        },
+
+        {
         type:"list",
         message: "select license",
         name: "license",
-        choices: ["MIT"]
+        choices: ["Apache-2.0", "GPL-3.0-only", "MIT", "BSD-2-Clause", "BSD-3-Clause", "BSL-1.0", "EPL-2.0", "AGPL-3.0-only", "GPL-2.0", "LGPL-2.1", "MPL-2.0", "Unlicense"],
         },
 
-    ]).then(({repository, project, description, license})=>{
-        const template=generateMarkdown(project, description, license);
+       
+
+    ]).then(({repository, project, description, contents, installation, usage, credits, questions, license})=>{
+        const template=generateMarkdown(project, description, contents, installation, usage, credits, questions, license);
         console.log(template);
         fs.writeFile("utils/README.md", template, (err) =>
         err ? console.log(err) : console.log('Success!')

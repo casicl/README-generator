@@ -33,12 +33,6 @@ function init() {
 
         {
         type: "input",
-        message: "Table of Contents",
-        name: "contents",
-        },
-
-        {
-        type: "input",
         message: "Installation instructions?",
         name: "installation",
         },
@@ -63,8 +57,14 @@ function init() {
 
         {
         type: "input",
-        message: "Questions",
-        name: "questions",
+        message: "Github",
+        name: "github",
+        },
+
+        {
+        type: "input",
+        message: "email",
+        name: "email"
         },
 
         {
@@ -76,8 +76,8 @@ function init() {
 
        
 
-    ]).then(({repository, project, description, contents, installation, usage, credits, questions, license})=>{
-        const template=generateMarkdown(project, description, contents, installation, usage, credits, questions, license);
+    ]).then(({repository, project, description, installation, usage, credits, test, github, email, license})=>{
+        const template=generateMarkdown(project, description, installation, usage, credits, test, github, email, license);
         console.log(template);
         fs.writeFile("utils/README.md", template, (err) =>
         err ? console.log(err) : console.log('Success!')

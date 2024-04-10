@@ -9,7 +9,8 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
 if(license){  return `
-  \n* [License] (#license)\n
+
+
   `}
   else return ""
 }
@@ -58,9 +59,10 @@ function generateMarkdown(project, description, installation, usage, credits, te
   <a name="questions"></a>
   ## Questions
   <https://www.github.com/${github}>
+  <br>
   ${email}
   ## License
-  ${license}
+  This project is licensed under the ${license} license
  
 `;
 }

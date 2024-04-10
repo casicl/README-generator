@@ -1,8 +1,8 @@
-# jskadlf;
+# jsadkfl;
   ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
   
   ## Description
-  jsakdfl;
+  asjdkfl;
 
 
   ## Table of contents 
@@ -15,27 +15,27 @@
   
   
   
-  
-* [License] (#license)
+
 
   
  
   <a name="installation"></a>
   ## Installation 
-  jkasdl;f
+  fdjkasl;
   <a name="usage"></a>
   ## Usage 
-  woieajr
+  jdfkal;s
   <a name="credits"></a>
   ## Credits 
-  iewoa
+  fjdklas;
   <a name="test"></a>
   ## Testing 
-  djl;fsakja;sdf
+  fjdklas;
   <a name="questions"></a>
   ## Questions
   <https://www.github.com/casicl>
-  skjadl;
+  <br>
+  casiclarkson@gmail.com
   ## License
-  MIT
+  This project is licensed under the MIT license
  

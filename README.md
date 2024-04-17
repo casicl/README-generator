@@ -11,6 +11,7 @@ A readme document generated from user prompts
 N/A
 
 ## Usage
+Run npm install and then node index.js to answer prompts
 
 ![Screenshot 2024-04-10 111304](https://github.com/casicl/README-generator/assets/158116041/4d3074d3-adbe-422b-92c2-9e651b75976f)
 
